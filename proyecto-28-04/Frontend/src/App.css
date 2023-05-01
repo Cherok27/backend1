@@ -1,0 +1,316 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+  
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.carrito{
+  border-radius: 100%;
+  background-color: green;
+  color: black;
+}
+.null{
+  visibility: hidden;
+}
+
+
+
+.extra-margin {
+  margin-top: 200px;
+}
+
+
+form {
+  margin: auto;
+  width: 60%;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6%;
+}
+form button{
+  width: 10vw;
+  
+  margin: 1rem auto;
+ 
+}
+form label{
+  text-align: left;
+  margin-top: 1.9%;
+}
+
+
+#sign-in {
+  margin-bottom: 10px;
+}
+
+#grey-button {
+  background-color: #646cff;
+ 
+  
+
+}
+#grey-button:hover{
+  background-color: white;
+  color: #646cff;
+}
+.izquierda{
+  display: flex;
+  align-items: center;
+
+
+}
+.divnav{
+  width:100%;
+}
+.h1
+{ position: absolute;
+  
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: 1;
+text-align: center;
+border-style: solid
+
+ ;}
+
+
+.oscurecer{
+  filter: brightness(0.6);
+  
+}
+.oscurecer:hover{
+  filter: brightness(1);
+  font-size: 2.5rem;
+  
+}.oscurecer:hover::after.h1{
+  transform: scale(1.2);
+}
+.App{ 
+  background-color: black;
+}
+.nomas{
+  width: 100%;
+  max-width: 100%;
+
+}
+.result{
+  border-style: solid;
+  display: grid;
+
+
+}
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(214, 13, 13);
+  border-radius: 5px;
+  
+  
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product-type,
+.product-brand,
+.product-quantity,
+.product-price {
+  margin: 5px 0;
+}
+.comprita {
+  background-color: transparent;
+  width: auto;
+  border-style: solid;
+  text-align: center;
+ 
+    
+    
+}
+.comprita:hover {
+  filter: hue-rotate(136deg);
+}
+
+.basket {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  }
+  
+  .basket h2 {
+  margin-top: 0;
+  }
+  
+  .basket-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .basket-items .item {
+  display: flex;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  }
+  
+  .basket-items .item img {
+  max-width: 100px;
+  margin-right: 10px;
+  }
+  
+  .item-details {
+  flex-grow: 1;
+  }
+  
+  .item-details h3 {
+  margin-top: 0;
+  }
+  
+  .item-details p {
+  margin: 0;
+  }
+  
+.remove-item {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  }
+  
+  .basket-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .checkout {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  }
+    .container {
+      display: grid;
+      place-content: center;
+      height: 100vh;
+    }
+  
+    .cargando {
+      width: 120px;
+      height: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin: 0 auto;
+      color: #31650A;
+    }
+  
+    .texto-cargando {
+      padding-top: 20px
+    }
+  
+    .cargando span {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  
+    .pelotas {
+      width: 30px;
+      height: 30px;
+      background-color: #112709;
+      animation: salto .5s alternate infinite;
+      border-radius: 50%
+    }
+  
+    .pelotas:nth-child(2) {
+      animation-delay: .18s;
+    }
+  
+    .pelotas:nth-child(3) {
+      animation-delay: .37s;
+    }
+  
+    @keyframes salto {
+      from {
+        transform: scaleX(1.25);
+      }
+  
+      to {
+        transform:
+          translateY(-50px) scaleX(1);
+      }
+    }
+    #searchNavbar{
+     display: flex;
+     flex-direction: row;
+     border-style: none;
+    
+    }
